@@ -26,7 +26,6 @@ function createMessage(){
 	//phoneGap and jQueryMobile do not support toast messages directly
     //so we can add this using toast.js
     new Toast({content: 'This is a message for you, user!', duration: 3000});
-    new Toast({content: 'Testing a second message at the same time!', duration: 10000});
 }
         
 function createMessage2(){
