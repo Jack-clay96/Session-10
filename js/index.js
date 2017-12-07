@@ -69,15 +69,17 @@ function createNotification() {
     //
     //setup notification
     //
-    
+    if(buttonIndex==1)
+        {
     cordova.plugins.notification.local.schedule({ 
     	id: 		1,
-        title: 		"Hey you",
-        message: 	"This is an example notification",
+        title: 		"Get back to work!,
+        message: 	"Dont care if your hungry",
         date: 		notificationTime, 
         badge: 		notification_count++
         
         
    	});
+        }
     
 }
