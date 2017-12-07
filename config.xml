@@ -21,6 +21,6 @@
 	
 	<!-- required plugins go here -->
 	    <plugin name = "cordova-plugin-dialogs"/> 
-        <plugin name = "cordova-plugin-local-notification"/> 
+        <plugin name = "cordova-plugin-local-notification" version ="8.0"/> 
 
 </widget>
