@@ -51,8 +51,8 @@ function createDialog() {
         	
 function dialogDismissed(buttonIndex) {
 	
-	if(buttonIndex==1) {createMessage("Take a break, go get foood!", 3000);}  // new Toast({content: "Take a break and eat fooooooood!", duration: 3000});
-   	else if(buttonIndex==2) {createMessage("Carry on working", 3000);}
+	if(buttonIndex==1) {createMessage("Take a break, go get foood!", 3000); createNotification()} // new Toast({content: "Take a break and eat fooooooood!", duration: 3000});
+   	else if(buttonIndex==2) createMessage("Carry on working", 3000);
 
 }
 
@@ -69,17 +69,16 @@ function createNotification() {
     //
     //setup notification
     //
-    if(buttonIndex==1)
-        {
+    
     cordova.plugins.notification.local.schedule({ 
     	id: 		1,
-        title: 		"Get back to work!,
+        title: 		"Get back to work!",
         message: 	"Dont care if your hungry",
         date: 		notificationTime, 
         badge: 		notification_count++
         
         
    	});
-        }
+        
     
 }
