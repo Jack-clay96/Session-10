@@ -51,8 +51,8 @@ function createDialog() {
         	
 function dialogDismissed(buttonIndex) {
 	
-	if(buttonIndex==1) createMessage("Take a break, go get foood!", 3000);  // new Toast({content: "Take a break and eat fooooooood!", duration: 3000});
-   	else if(buttonIndex==2) createMessage("Carry on working", 3000);
+	if(buttonIndex==1) {createMessage("Take a break, go get foood!", 3000);}  // new Toast({content: "Take a break and eat fooooooood!", duration: 3000});
+   	else if(buttonIndex==2) {createMessage("Carry on working", 3000);}
 
 }
 
